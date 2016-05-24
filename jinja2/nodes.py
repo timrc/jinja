@@ -914,6 +914,6 @@ class ScopedEvalContextModifier(EvalContextModifier):
 
 
 # make sure nobody creates custom nodes
-def _failing_new(*args, **kwargs):
-    raise TypeError('can\'t create custom node types')
-NodeType.__new__ = staticmethod(_failing_new); del _failing_new
+# def _failing_new(*args, **kwargs):
+#     raise TypeError('can\'t create custom node types')
+# NodeType.__new__ = staticmethod(_failing_new); del _failing_new
